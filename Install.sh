@@ -93,6 +93,5 @@ main() {
 
     echo -e "Install Complete! Developed by Nexus42! (I love nexus 42 when macsploit works)"
     exit
-}
 
 main
