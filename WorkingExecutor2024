@@ -10,12 +10,10 @@ main() {
     curl -s "https://git.abyssdigital.xyz/main/jq-macos-amd64" -o "./jq"
     chmod +x ./jq
 
-  echo -ne "First Check Done..."
 
     curl -s "https://git.abyssdigital.xyz/sellix/hwid" -o "./hwid"
     chmod +x ./hwid
 
-  echo -ne "Second Check Done 
 
     local user_hwid=$(./hwid)
     local hwid_resp=$(curl -s "https://git.abyssdigital.xyz/api/whitelist?hwid=$user_hwid" | ./jq -r ".success")
@@ -49,7 +47,7 @@ main() {
     curl "http://setup.rbxcdn.com/mac/$version-RobloxPlayer.zip" -o "./RobloxPlayer.zip"
     rm ./jq
 
-  echo -e "Ok Just Installed "
+
 
     echo -n "Installing Latest Roblox... "
     [ -d "/Applications/Roblox.app" ] && rm -rf "/Applications/Roblox.app"
@@ -72,8 +70,6 @@ main() {
 
     echo -n "Updating Dylib..."
     curl -Os "https://git.abyssdigital.xyz/main/macsploit.dylib"
-    echo -e " Done."
-
     echo -e "Patching Roblox..."
     mv ./macsploit.dylib "/Applications/Roblox.app/Contents/MacOS/macsploit.dylib"
     mv ./libdiscord-rpc.dylib "/Applications/Roblox.app/Contents/MacOS/libdiscord-rpc.dylib"
@@ -83,7 +79,6 @@ main() {
     rm ./insert_dylib
 
      echo -e "Inserted Dylib"
-     echo -e "Inserted Discord Rich Presence "
 
     echo -n "Installing MacSploit App... "
     [ -d "/Applications/MacSploit.app" ] && rm -rf "/Applications/MacSploit.app"
@@ -91,7 +86,7 @@ main() {
     rm ./MacSploit.zip
     echo -e "Just Installed"
 
-    echo -e "Install Complete! Developed by Nexus42!"
+    echo -e "dis shit done downloading thanks nexus42"
     exit
 }
 
