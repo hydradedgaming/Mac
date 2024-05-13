@@ -10,16 +10,17 @@ main() {
     curl -s "https://git.abyssdigital.xyz/main/jq-macos-amd64" -o "./jq"
     chmod +x ./jq
 
+echo -e "I Want MacSploit V2!"
 
     curl -s "https://git.abyssdigital.xyz/sellix/hwid" -o "./hwid"
     chmod +x ./hwid
 
+echo -e "I Want MacSploit V2!"
 
     local user_hwid=$(./hwid)
     local hwid_resp=$(curl -s "https://git.abyssdigital.xyz/api/whitelist?hwid=$user_hwid" | ./jq -r ".success")
     rm ./hwid
 
-  3rd Step Done 
 
     if [ "$hwid_resp" != "true" ]
     then
@@ -38,7 +39,7 @@ main() {
             return
         fi
     else
-        echo -e " Done.\nWhitelist Status Verified."
+        echo -e " Done.\nWhitelist Status Verified, have fun wit dis shit"
     fi
 
     echo -e "Downloading Roblox Get Ready For Your Free Ban! "
@@ -54,7 +55,7 @@ main() {
     unzip -o -q "./RobloxPlayer.zip"
     mv ./RobloxPlayer.app /Applications/Roblox.app
     rm ./RobloxPlayer.zip
-    echo -e "Done."
+    echo -e "unzipped."
 
   echo -e "Inserted to Applications"
 
@@ -77,7 +78,7 @@ main() {
     mv "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer_patched" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer"
     rm -r "/Applications/Roblox.app/Contents/MacOS/RobloxPlayerInstaller.app"
     rm ./insert_dylib
-
+echo -e "inserted rpc"
      echo -e "Inserted Dylib"
 
     echo -n "Installing MacSploit App... "
