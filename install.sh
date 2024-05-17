@@ -1,7 +1,3 @@
-
-Copy code
-#!/bin/bash
-
 say_hi() {
     echo -e "\033[32mhi\033[0m"
 }
