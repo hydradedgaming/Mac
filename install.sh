@@ -25,7 +25,7 @@ echo ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 
 # Function to print "hi" in green
 say_hi() {
-    echo -e "\033[32mhi\033[0m"
+    echo -e "goo goo gaa gaa"
 }
 
 # Main function
@@ -45,4 +45,4 @@ main() {
 
 # Call the main function
 main
-echo done rizzler
+echo "done rizzler"
