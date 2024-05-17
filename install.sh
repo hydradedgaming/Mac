@@ -23,16 +23,14 @@ echo ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
  echo "dear nexus42 if u see this know i love hacker man 
 
 main() 
-
-    echo -n " Type Yes If You Would Like To Install The Theme "
-    read -n 1 -r text
+{
+    echo " Type Yes If You Would Like To Install The Theme "
+    read text
  
     if [[ "$text" == "yes" || "$text" == "Yes" ]]; then
    echo "farts"
     else
-        echo -e"Command Not Registered Try Again
-       
-    fi
+        echo -e"Command Not Registered Try Again"
 }
 
 main
