@@ -36,7 +36,7 @@ main() {
     
     # Check if input is "yes" or "Yes"
     if [[ "$text" == "y" || "$text" == "Y" ]]; then
-        echo -e "\n\033[32mok hi bro\033[0m"
+        echo -e "123 abc"
     else
         echo -e "\n"
         say_hi
