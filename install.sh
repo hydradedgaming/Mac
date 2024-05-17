@@ -21,28 +21,19 @@ echo ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
  echo  "[Abyss] Digital Software"
  echo "[Owner] Nexus42
  echo "dear nexus42 if u see this know i love hacker man 
-#!/bin/bash
 
-# Function to print "hi" in green
-say_hi() {
-    echo -e "goo goo gaa gaa"
-}
+main() 
 
-# Main function
-main() {
-    # Prompt user for input
-    echo -n "Enter text: "
+    echo -n " Type Yes If You Would Like To Install The Theme "
     read -n 1 -r text
-    
-    # Check if input is "yes" or "Yes"
-    if [[ "$text" == "y" || "$text" == "Y" ]]; then
-        echo -e "123 abc"
+ 
+    if [[ "$text" == "yes" || "$text" == "Yes" ]]; then
+   echo "farts"
     else
-        echo -e "\n"
-        say_hi
+        echo -e"Command Not Registered Try Again
+       
     fi
 }
 
-# Call the main function
 main
 echo "done rizzler"
