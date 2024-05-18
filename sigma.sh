@@ -28,7 +28,7 @@ main() {
    echo "farts"
     else
         echo -e"Command Not Registered Try Again"  
+        echo "Made By Hydradedgaming DM Me You Theme Ideas On Discord Discord User = Hydradedgaming And Join The Disocrd :D https://discord.gg/NASGRZa5NT"
 }
 
 main
-echo "Made By Hydradedgaming DM Me You Theme Ideas On Discord Discord User = Hydradedgaming And Join The Disocrd :D https://discord.gg/NASGRZa5NT"
