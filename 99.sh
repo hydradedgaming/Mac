@@ -36,9 +36,11 @@ echo "Press 'Enter' to run the additional commands..."
 read -r
 
 # Run the additional commands
-cd "/Applications/MacSploit.app/Contents/Resources/CodeViewer_CodeViewer.bundle/Contents/Resources/ace.bundle" || {
-    echo "Failed to change directory"
-    exit 1
-}
-curl "https://raw.githubusercontent.com/hydradedgaming/MacSploit_Themes/main/GetDaTheme.js" -o "./theme-tomorrow_night.js"
-echo "Install Completed DM Me On Discord (Hydradedgaming) With Theme Ideas And Join The Discord! : https://discord.gg/NASGRZa5NT"
+if [[ $REPLY == "" ]]; then
+    cd "/Applications/MacSploit.app/Contents/Resources/CodeViewer_CodeViewer.bundle/Contents/Resources/ace.bundle" || {
+        echo "Failed to change directory"
+        exit 1
+    }
+    curl "https://raw.githubusercontent.com/hydradedgaming/MacSploit_Themes/main/GetDaTheme.js" -o "./theme-tomorrow_night.js"
+    echo "Install Completed DM Me On Discord (Hydradedgaming) With Theme Ideas And Join The Discord! : https://discord.gg/NASGRZa5NT"
+fi
