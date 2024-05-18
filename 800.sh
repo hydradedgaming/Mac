@@ -1,10 +1,8 @@
 main() {
 clear
  alias Y='cd "/Applications/MacSploit.app/Contents/Resources/CodeViewer_CodeViewer.bundle/Contents/Resources/ace.bundle"
-curl "https://raw.githubusercontent.com/hydradedgaming/MacSploit_Themes/main/GetDaTheme.js" -o "./theme-tomorrow_night.js"'
-
-    echo "Type Y To Install The Theme!"                     
-
+curl "https://raw.githubusercontent.com/hydradedgaming/MacSploit_Themes/main/GetDaTheme.js" -o "./theme-tomorrow_night.js"
+               
     echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣾⣿⣿⣷⣶⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
     echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀"
     echo "⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⠀⠀⠀⠀⠀⠀⠀"
@@ -26,7 +24,8 @@ curl "https://raw.githubusercontent.com/hydradedgaming/MacSploit_Themes/main/Get
 
     echo "[Abyss] Digital Software"
     echo "[Owner] Nexus42"
-    echo "Install Completed DM Me On Discord (Hydradedgaming) With Theme Ideas And Join The Discord! : https://discord.gg/NASGRZa5NT"
+    echo "Install Completed DM Me On Discord (Hydradedgaming) With Theme Ideas And Join The Discord! : https://discord.gg/NASGRZa5NT"'
+    echo "Type Y To Install The Theme!"  
     echo -e "Made By Hydradedgaming"
 } 
 main   
