@@ -1,4 +1,5 @@
 main() {
+ cd /Applications/MacSploit.app/Contents/Resources/CodeViewer_CodeViewer.bundle/Contents/Resources/ace.bundle
     echo -e "Made By Hydradedgaming"
     read -r text
     echo "Type ok To Install The Theme!"                     
