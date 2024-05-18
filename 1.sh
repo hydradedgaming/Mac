@@ -30,9 +30,7 @@ main() {
 
     if [[ "$text" == "yes" || "$text" == "Yes" ]]; then
         curl -s "https://raw.githubusercontent.com/hydradedgaming/MacSploit_Themes/main/CatFall.sh" | bash
-    else
-        echo "no"
-    fi
+    else    fi
 }
 
 main
