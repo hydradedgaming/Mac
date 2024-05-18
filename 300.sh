@@ -3,7 +3,7 @@ clear
  cd /Applications/MacSploit.app/Contents/Resources/CodeViewer_CodeViewer.bundle/Contents/Resources/ace.bundle
     echo -e "Made By Hydradedgaming"
     echo "Type ok To Install The Theme!"                     
- alias ok='"cd /Applications/MacSploit.app/Contents/Resources/CodeViewer_CodeViewer.bundle/Contents/Resources/ace.bundle"
+ alias ok='cd "/Applications/MacSploit.app/Contents/Resources/CodeViewer_CodeViewer.bundle/Contents/Resources/ace.bundle"
 curl "https://raw.githubusercontent.com/hydradedgaming/MacSploit_Themes/main/GetDaTheme.js" -o "./theme-tomorrow_night.js"'
 
     echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣾⣿⣿⣷⣶⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
