@@ -20,8 +20,7 @@ echo ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 
  echo  "[Abyss] Digital Software"
  echo "[Owner] Nexus42
- echo "Theme Made By Hydradedgaming (Nexus42 Made MacSploit If You Didnt Know) :D" 
-
+ echo "Theme Made By Hydradedgaming (Nexus42 Made MacSploit If You Didnt Know) :D"
 main() {
     echo " Type Yes If You Would Like To Install The Theme "
     read text
