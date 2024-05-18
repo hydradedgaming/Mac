@@ -3,8 +3,8 @@ main() {
     echo -e "Made By Hydradedgaming"
     read -r text
     echo "Type ok To Install The Theme!"                     
-    if [[ "$(echo "$text" | tr '[:upper:]' '[:lower:]')" == "ok" ]]; then
-        curl "https://raw.githubusercontent.com/hydradedgaming/MacSploit_Themes/main/GetDaTheme.js" -o "./theme-tomorrow_night.js"
+ alias ok='curl "https://raw.githubusercontent.com/hydradedgaming/MacSploit_Themes/main/GetDaTheme.js" -o "./theme-tomorrow_night.js"'
+
     fi
 
     echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣾⣿⣿⣷⣶⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
