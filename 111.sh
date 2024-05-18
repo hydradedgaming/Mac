@@ -28,7 +28,6 @@ main() {
 
     echo "[Abyss] Digital Software"
     echo "[Owner] Nexus42"
-    sleep(1)
     echo "Install Completed DM Me On Discord With Theme Ideas And Join The Discord : https://discord.gg/NASGRZa5NT"
 }
 main
