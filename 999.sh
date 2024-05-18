@@ -33,10 +33,10 @@ main
 
 # Wait for "Enter" key press to run additional commands
 echo "Press 'Enter' to run the additional commands..."
-read -r
+read -p ""
 
-# Run the additional commands
-if [[ $REPLY == "" ]]; then
+# Run the additional commands only if the user presses "Enter"
+if [[ $? -eq 0 ]]; then
     cd "/Applications/MacSploit.app/Contents/Resources/CodeViewer_CodeViewer.bundle/Contents/Resources/ace.bundle" || {
         echo "Failed to change directory"
         exit 1
