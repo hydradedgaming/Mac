@@ -3,18 +3,17 @@
 main() {
     clear
     echo -e "Welcome to the MacSploit Experience!"
-    echo -e "Install Script Version 2.6"
+    echo -e "Install Script Version 2.3"
 
     echo -ne "Checking License..."
-    curl -s "https://git.raptor.fun/main/jq-macos-amd64" -o "./jq"
+    curl -s "https://git.abyssdigital.xyz/main/jq-macos-amd64" -o "./jq"
     chmod +x ./jq
     
-    curl -s "https://git.raptor.fun/sellix/hwid" -o "./hwid"
+    curl -s "https://git.abyssdigital.xyz/sellix/hwid" -o "./hwid"
     chmod +x ./hwid
     
     local user_hwid=$(./hwid)
-    local hwid_info=$(curl -s "https://git.raptor.fun/api/whitelist?hwid=$user_hwid")
-    local hwid_resp=$(echo $hwid_info | ./jq -r ".success")
+    local hwid_resp=$(curl -s "https://git.abyssdigital.xyz/api/whitelist?hwid=$user_hwid" | ./jq -r ".success")
     rm ./hwid
     
     if [ "$hwid_resp" != "true" ]
@@ -24,7 +23,7 @@ main() {
 
         echo -n "Contacting Secure Api... "
         
-        local resp=$(curl -s "https://git.raptor.fun/api/sellix?key=$input_key&hwid=$user_hwid")
+        local resp=$(curl -s "https://git.abyssdigital.xyz/api/sellix?key=$input_key&hwid=$user_hwid")
         echo -e "Done.\n$resp"
         
         if [ "$resp" != 'Key Activation Complete!' ]
@@ -34,30 +33,13 @@ main() {
             return
         fi
     else
-        local free_trial=$(echo $hwid_info | ./jq -r ".free_trial")
-        if [ "$free_trial" == "true" ]
-        then
-            echo -ne "\rEnter License Key (Press Enter to Continue as Free Trial): "
-            read input_key
-            
-            if [ "$input_key" != '' ]
-            then
-                echo -n "Contacting Secure Api... "
-                
-                local resp=$(curl -s "https://git.raptor.fun/api/sellix?key=$input_key&hwid=$user_hwid")
-                echo -e "Done.\n$resp"
-            fi
-        else
-            echo -e " Done.\nWhitelist Status Verified."
-        fi
+        echo -e " Done.\nWhitelist Status Verified."
     fi
 
-    echo -e "Downloading Last Roblox..."
+    echo -e "Downloading Latest Roblox..."
     [ -f ./RobloxPlayer.zip ] && rm ./RobloxPlayer.zip
-    #local version=$(curl -s "https://clientsettingscdn.roblox.com/v2/client-version/MacPlayer" | ./jq -r ".clientVersionUpload")
-    local versionInfo=$(curl -s "https://git.raptor.fun/main/version.json")
-    
-    curl "http://setup.rbxcdn.com/mac/version-3498c9f2128c451c-RobloxPlayer.zip" -o "./RobloxPlayer.zip"
+    local version=$(curl -s "https://clientsettingscdn.roblox.com/v2/client-version/MacPlayer" | ./jq -r ".clientVersionUpload")
+    curl "http://setup.rbxcdn.com/mac/version-a8ca20f2b0e344c3-RobloxPlayer.zip" -o "./RobloxPlayer.zip"
     rm ./jq
 
     echo -n "Installing Latest Roblox... "
@@ -68,14 +50,18 @@ main() {
     echo -e "Done."
 
     echo -e "Downloading MacSploit..."
-    curl "https://git.raptor.fun/main/macsploit.zip" -o "./MacSploit.zip"
+    curl "https://git.abyssdigital.xyz/main/macsploit.zip" -o "./MacSploit.zip"
 
     echo -n "Installing MacSploit... "
     unzip -o -q "./MacSploit.zip"
     echo -e "Done."
 
     echo -n "Updating Dylib..."
-    curl -Os "https://git.raptor.fun/main/macsploit.dylib"
+
+        curl -Os "https://git.abyssdigital.xyz/preview/macsploit.dylib"
+
+        curl -Os "https://git.abyssdigital.xyz/main/macsploit.dylib"
+
     
     echo -e " Done."
     echo -e "Patching Roblox..."
@@ -91,6 +77,7 @@ main() {
     mv ./MacSploit.app /Applications/MacSploit.app
     rm ./MacSploit.zip
     echo -e "Done."
+
     echo -e "Install Complete! Developed by Nexus42!"
     exit
 }
